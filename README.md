@@ -46,3 +46,44 @@ This project and everyone participating in it is governed by the [Contributor Co
 ## Contributing
 
 Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](https://codepen.io). That **last one is important**.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OS List</title>
+<style>
+  .os-item {
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  .os-logo {
+    display: none;
+    width: 50px; /* adjust size */
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  /* Show logo when parent is clicked */
+  .os-item:active .os-logo {
+    display: inline;
+  }
+</style>
+</head>
+<body>
+  <div class="os-item">
+    Windows
+    <img class="os-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2021.svg" alt="Windows Logo">
+  </div>
+
+  <div class="os-item">
+    Linux
+    <img class="os-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Logo">
+  </div>
+
+  <div class="os-item">
+    macOS
+    <img class="os-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="macOS Logo">
+  </div>
+</body>
+</html>
